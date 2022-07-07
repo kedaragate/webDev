@@ -59,7 +59,7 @@ const searchText = document.querySelector("#searchText");
 const searchButton = document.querySelector(".searchBtn");
 
 searchText.addEventListener("keyup", function () {
-  const searchValue = this.value;
+  const searchValue = this.value.toLowerCase();
 
   const searchUser = userData.filter((user) => {
     return user.firstName.toLowerCase().startsWith(searchValue);

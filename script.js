@@ -65,8 +65,9 @@ searchText.addEventListener("keyup", function () {
     return user.firstName.toLowerCase().startsWith(searchValue);
 
   })
-
+removeExistingUsers();
   displayCards(searchUser);
+
 });
 
 const removeExistingUsers = function () {

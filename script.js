@@ -63,7 +63,7 @@ searchText.addEventListener("keyup", function () {
 
   const searchUser = userData.filter((user) => {
     return user.firstName.toLowerCase().startsWith(searchValue);
-  })||"Sorry No Such Human Works Here.";
+  })||usersDiv.innerHTML = "Sorry No Such Human Works Here.";
   removeExistingUsers();
 
   displayCards(searchUser);

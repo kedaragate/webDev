@@ -20,7 +20,7 @@ let displayCards = function (users) {
   users.forEach((user) => {
     const userCard = createUserCard(user);
     usersDiv.appendChild(userCard);
-    usersDiv.style.display = "flex";
+   /* usersDiv.style.display = "flex";*/
   });
 };
 let createUserCard = function (user) {

@@ -63,7 +63,7 @@ searchText.addEventListener("keyup", function () {
 
   const searchUser = userData.filter((user) => {
     return user.firstName.toLowerCase().startsWith(searchValue);
-if(!searchUser){ userDiv.innerHTML="<h1>Sorry No Such Human Here</h1>"}
+
   })
 
   displayCards(searchUser);

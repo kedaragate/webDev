@@ -42,7 +42,7 @@
 
 .searchDiv {
   height: 10vh;
-
+background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;

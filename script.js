@@ -99,7 +99,7 @@ document.body.style.backgroundColor="black";
 usersDiv.style.backgroundColor="black";
 card.style.backgroundColor="black";
 message.style.color="white";
-userName.style.color="black";
+card.style.color="black";
 }
 
 

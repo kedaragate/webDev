@@ -1,6 +1,6 @@
 const usersDiv = document.querySelector(".cards");
 const card = document.querySelector(".card");
-const message=document.querySelector("#message");
+const message = document.querySelector("#message");
 let userData;
 
 fetch("https://dummyapi.io/data/v1/user", {
@@ -16,15 +16,15 @@ fetch("https://dummyapi.io/data/v1/user", {
     hideMessage(message);
     displayCards(data.data);
   });
-let hideMessage=function (){
-message.style.display="none";
-}
+let hideMessage = function () {
+  message.style.display = "none";
+};
 
 let displayCards = function (users) {
   users.forEach((user) => {
     const userCard = createUserCard(user);
     usersDiv.appendChild(userCard);
-   /* usersDiv.style.display = "flex";*/
+    /* usersDiv.style.display = "flex";*/
   });
 };
 let createUserCard = function (user) {
@@ -67,11 +67,9 @@ searchText.addEventListener("keyup", function () {
 
   const searchUser = userData.filter((user) => {
     return user.firstName.toLowerCase().startsWith(searchValue);
-
-  })
-removeExistingUsers();
+  });
+  removeExistingUsers();
   displayCards(searchUser);
-
 });
 
 const removeExistingUsers = function () {
@@ -79,34 +77,28 @@ const removeExistingUsers = function () {
 };
 
 //Switching modes
-const modeButton=document.querySelector("#lightModeBtn");
+const modeButton = document.querySelector("#lightModeBtn");
 
-const switchMode=function (){
-if(modeButton.textContent="Light Mode"){
+const switchMode = function () {
+  if (modeButton.textContent == "LM") {
+    modeButton.textContent = "DM";
+    // modeButton.style.backgroundColor = "white";
+    // modeButton.style.color = "black";
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    usersDiv.style.backgroundColor = "white";
+    card.style.backgroundColor = "white";
+    // message.style.color = "white";
+    // card.style.color = "white";
+  } else if (modeButton.textContent == "DM") {
+    modeButton.textContent = "LM";
 
-modeButton.textContent="Dark Mode";
-document.body.style.backgroundColor="white";
-usersDiv.style.backgroundColor="white";
-card.style.backgroundColor="white";
-message.style.color="black";
-card.style.color="black";
-}
-
-else if(modeButton.textContent="Dark Mode"){
-modeButton.textContent="Light Mode";
-document.body.style.backgroundColor="black";
-usersDiv.style.backgroundColor="black";
-card.style.backgroundColor="black";
-message.style.color="white";
-
-}
-
-
-}
-
-
-
-
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+    usersDiv.style.backgroundColor = "black";
+    card.style.backgroundColor = "black";
+    // message.style.color = "white";
+  }
+};
 
 modeButton.addEventListener("click", switchMode);
-

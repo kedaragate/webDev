@@ -1,7 +1,7 @@
 const usersDiv = document.querySelector(".cards");
 const card = document.querySelector(".card");
 const message=document.querySelector("#message");
-const body=document.querySelector("body");
+
 let userData;
 
 fetch("https://dummyapi.io/data/v1/user", {
@@ -85,6 +85,6 @@ const modeButton=document.querySelector("#lightModeBtn");
 modeButton.addEventListener("click", switchMode);
 const switchMode=function (){
 modeButton.textContent="Dark Mode";
-body.style.backgroundColor="white";
+document.body.style.backgroundColor="white";
 
 }

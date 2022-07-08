@@ -1,7 +1,7 @@
 const usersDiv = document.querySelector(".cards");
 const card = document.querySelector(".card");
 const message=document.querySelector("#message");
-cost body=document.querySelector("body");
+const body=document.querySelector("body");
 let userData;
 
 fetch("https://dummyapi.io/data/v1/user", {

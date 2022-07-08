@@ -17,7 +17,7 @@ fetch("https://dummyapi.io/data/v1/user", {
     displayCards(data.data);
   });
 let hideMessage=function (){
-message.style.display=none;
+message.style.display="none";
 }
 
 let displayCards = function (users) {

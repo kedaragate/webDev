@@ -1,7 +1,6 @@
 const usersDiv = document.querySelector(".cards");
 const card = document.querySelector(".card");
 const message=document.querySelector("#message");
-const userName=document.querySelector(".card-name");
 let userData;
 
 fetch("https://dummyapi.io/data/v1/user", {
@@ -83,7 +82,7 @@ const removeExistingUsers = function () {
 const modeButton=document.querySelector("#lightModeBtn");
 
 const switchMode=function (){
-if(modeButton.textContent=="Light Mode"){
+if(document.body.style.backgroundColor="black"){
 
 modeButton.textContent="Dark Mode";
 document.body.style.backgroundColor="white";
@@ -93,7 +92,7 @@ message.style.color="black";
 card.style.color="black";
 }
 
-else if(modeButton.textContent=="Dark Mode"){
+else if(document.body.style.backgroundColor="white"){
 modeButton.textContent="Light Mode";
 document.body.style.backgroundColor="black";
 usersDiv.style.backgroundColor="black";

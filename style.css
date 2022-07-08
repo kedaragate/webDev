@@ -46,6 +46,7 @@ color:white;
 
 .searchDiv {
   height: 5vh;
+width:100%
 
   display: flex;
   align-items: center;
@@ -53,7 +54,7 @@ color:white;
 
 }
 #searchText {
-  width: 400px;
+  width: 90%;
 
   height: 30px;
   border: 1px solid gray;

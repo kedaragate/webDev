@@ -83,7 +83,7 @@ const removeExistingUsers = function () {
 const modeButton=document.querySelector("#lightModeBtn");
 
 const switchMode=function (){
-if(modeButton.textContent="Light Mode"){
+if(modeButton.textContent=="Light Mode"){
 
 modeButton.textContent="Dark Mode";
 document.body.style.backgroundColor="white";

@@ -1,7 +1,7 @@
 const usersDiv = document.querySelector(".cards");
 const card = document.querySelector(".card");
 const message=document.querySelector("#message");
-
+const userName=document.querySelector(".card-name");
 let userData;
 
 fetch("https://dummyapi.io/data/v1/user", {
@@ -99,7 +99,7 @@ document.body.style.backgroundColor="black";
 usersDiv.style.backgroundColor="black";
 card.style.backgroundColor="black";
 message.style.color="white";
-card.style.color="black";
+userName.style.color="black";
 }
 
 

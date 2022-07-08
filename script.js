@@ -1,5 +1,6 @@
 const usersDiv = document.querySelector(".cards");
 const card = document.querySelector(".card");
+const message=document.querySelector(".message");
 let userData;
 
 fetch("https://dummyapi.io/data/v1/user", {
@@ -12,9 +13,12 @@ fetch("https://dummyapi.io/data/v1/user", {
   .then((response) => response.json())
   .then((data) => {
     userData = data.data;
-    console.log(userData);
+    hideMessage(message);
     displayCards(data.data);
   });
+let hideMessage=function (){
+message.style.display=none;
+}
 
 let displayCards = function (users) {
   users.forEach((user) => {

@@ -71,3 +71,11 @@ background-color: white;
 text-align:center;
 
 }
+#lightModeBtn{
+padding: 5px;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+}

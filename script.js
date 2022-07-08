@@ -13,12 +13,12 @@ fetch("https://dummyapi.io/data/v1/user", {
   .then((response) => response.json())
   .then((data) => {
     userData = data.data;
-    hideMessage(message);
+    /*hideMessage(message);*/
     displayCards(data.data);
   });
-let hideMessage=function (){
-message.style.display="none";
-}
+/*let hideMessage=function (){
+message.style.display=none;
+}*/
 
 let displayCards = function (users) {
   users.forEach((user) => {

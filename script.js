@@ -91,7 +91,7 @@ usersDiv.style.backgroundColor="white";
 card.style.backgroundColor="white";
 message.style.color="black";}
 
-else{
+else if(modeButton.textContent=="Dark Mode"){
 modeButton.textContent="Dark Mode";
 document.body.style.backgroundColor="black";
 usersDiv.style.backgroundColor="black";

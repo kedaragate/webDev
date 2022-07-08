@@ -52,9 +52,9 @@ color:white;
   height: 5vh;
   
 
-  display: flex;
+  /*display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 
 }
 #searchText {

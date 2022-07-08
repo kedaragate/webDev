@@ -82,9 +82,10 @@ const removeExistingUsers = function () {
 //Switching modes
 const modeButton=document.querySelector("#lightModeBtn");
 
-modeButton.addEventListener("click", switchMode);
 const switchMode=function (){
 modeButton.textContent="Dark Mode";
 document.body.style.backgroundColor="white";
 
 }
+modeButton.addEventListener("click", switchMode);
+

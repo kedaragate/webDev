@@ -85,6 +85,9 @@ const modeButton=document.querySelector("#lightModeBtn");
 const switchMode=function (){
 modeButton.textContent="Dark Mode";
 document.body.style.backgroundColor="white";
+usersDiv.style.backgroundColor="white";
+card.style.backgroundColor="white";
+message.style.color="black";
 
 }
 modeButton.addEventListener("click", switchMode);

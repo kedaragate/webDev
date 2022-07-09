@@ -125,7 +125,7 @@ modeButton.addEventListener("click", switchMode);
 */
 
 //user modal
-userButton = document.querySelectorAll(".card-btn");
+userButton = document.getElementsByClassName("card-btn");
 console.log(userButton);
 userButton.forEach((btn) => {
   btn.addEventListener("click", function () {
